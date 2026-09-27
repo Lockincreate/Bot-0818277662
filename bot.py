@@ -49,3 +49,7 @@ def run_web():
 if __name__ == "__main__":
     threading.Thread(target=run_telegram, daemon=True).start()
     run_web()
+import threading
+@app.route('/')
+def h(): return "ok"
+threading.Thread(target=lambda: bot.infinity_polling(), daemon=True).start()
