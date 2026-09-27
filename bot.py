@@ -4,7 +4,7 @@ from flask import Flask
 import telebot
 
 # Tokens
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8825349057:AAFKSOBeXrE5Lp9iD6ehrn3EOKCTfDikV1o")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 app = Flask(__name__)
 
